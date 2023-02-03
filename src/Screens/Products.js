@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
     },
     imageStyle :{
         height:150,
-        width: 150
+        width: 150,
+        
     },
     nameText:{
         fontWeight:"bold",

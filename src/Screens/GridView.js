@@ -21,7 +21,7 @@ const GridView = () => {
  return(
     <SafeAreaView>
         <FlatList
-        showsHorizontalScrollIndicator = {false}
+        showsVerticalScrollIndicator = {false}
         numColumns = {2}
         data = {products}
         keyExtractor = {(item,index)=>index.toString()}
