@@ -1,5 +1,4 @@
 import React from 'react';
-import { Alert } from 'react-native';
 import {Text, View, StyleSheet,TouchableOpacity,Button} from 'react-native';
 
 const Welcome = () => {
@@ -16,10 +15,25 @@ const Welcome = () => {
         console.log('button pressed')}
         style = {styles.buttonContainer2}
         >
-        <Text style = {styles.buttonText}>Custom Button</Text>
+        <Text style = {styles.buttonText2}>Custom Button</Text>
         </TouchableOpacity>
-        </View>    
         
+        
+        <TouchableOpacity onPress={()=> 
+            console.log('button pressed')}
+            style = {styles.buttonContainer3}
+            >
+            <Text style = {styles.buttonText3}>Custom Button</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={()=> 
+            console.log('button pressed')}
+            style = {styles.buttonContainer4}
+            >
+            <Text style = {styles.buttonText4}>Custom Button</Text>
+        </TouchableOpacity>
+        
+    </View>
     );
 
 };
@@ -46,8 +60,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
         borderRadius:10
-        
-           
+              
     },
     buttonText2:{
         textTransform:'uppercase',
@@ -55,7 +68,44 @@ const styles = StyleSheet.create({
         fontSize:16,
         fontWeight:'bold',
 
-    }   
+    }, 
+    buttonContainer3:{
+        height:40,
+        marginHorizontal:50,
+        marginVertical:20,
+        justifyContent:'center',
+        alignItems:'center',
+        borderRadius:50,
+        borderWidth:4,
+        borderColor:'blue'
+              
+    },
+    buttonText3:{
+        textTransform:'uppercase',
+        color:'blue',
+        fontSize:16,
+        fontWeight:'bold',
+
+    },  
+    buttonContainer4:{
+        height:120,
+        width:120,
+        marginHorizontal:50,
+        marginVertical:20,
+        justifyContent:'center',
+        alignItems:'center',
+        borderRadius:60,
+        borderWidth:4,
+        borderColor:'blue'
+              
+    },
+    buttonText4:{
+        textTransform:'uppercase',
+        color:'blue',
+        fontSize:16,
+        fontWeight:'bold',
+
+    }  
         
 });
 export default Welcome;
