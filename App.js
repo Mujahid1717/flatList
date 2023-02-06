@@ -7,15 +7,16 @@ import DetailScreen from "./src/Screens/DetailScreen";
 import ListScreen from "./src/Screens/ListScreen";
 import LogoScreen from "./src/Screens/logoScreen";
 import GridView from "./src/Screens/GridView";
-
+import Welcome from "./src/Screens/Welcome";
 const Stack = createNativeStackNavigator();
 const navigator = () => {
   return(
   <NavigationContainer>
     <Stack.Navigator>
+    <Stack.Screen name ='Welcome' component={Welcome} />
     <Stack.Screen name ='Home' component={GridView} />
-      <Stack.Screen name ="List Screen" component={ListScreen} />
-     <Stack.Screen name= 'Detail' component={DetailScreen} /> 
+    <Stack.Screen name ="List Screen" component={ListScreen} />
+    <Stack.Screen name= 'Detail' component={DetailScreen} /> 
     </Stack.Navigator>
   </NavigationContainer>
   );
