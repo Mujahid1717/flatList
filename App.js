@@ -9,7 +9,7 @@ import LogoScreen from "./src/Screens/logoScreen";
 import GridView from "./src/Screens/GridView";
 import Welcome from "./src/Screens/Welcome";
 import Signup from "./src/Screens/Signup";
-
+import Hooks from "./src/Screens/Hooks";
 
 
 const Stack = createNativeStackNavigator();
@@ -17,7 +17,7 @@ const navigator = () => {
   return(
   <NavigationContainer>
     <Stack.Navigator>
-    <Stack.Screen name ='Signup' component={Signup} />
+    <Stack.Screen name ='hooks' component={Hooks} />
     <Stack.Screen name ='Home' component={GridView} />
     <Stack.Screen name ="List Screen" component={ListScreen} />
     <Stack.Screen name= 'Detail' component={DetailScreen} /> 
