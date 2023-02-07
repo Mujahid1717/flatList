@@ -18,7 +18,6 @@ const Welcome = () => {
         <Text style = {styles.buttonText2}>Custom Button</Text>
         </TouchableOpacity>
         
-        
         <TouchableOpacity onPress={()=> 
             console.log('button pressed')}
             style = {styles.buttonContainer3}
@@ -44,8 +43,7 @@ const styles = StyleSheet.create({
         marginVertical:25,
         backgroundColor:'red',
         justifyContent:'center',
-        alignItems:'center',
-           
+        alignItems:'center',      
     },
     buttonText:{
         textTransform:'uppercase',
@@ -59,15 +57,13 @@ const styles = StyleSheet.create({
         backgroundColor:'blue',
         justifyContent:'center',
         alignItems:'center',
-        borderRadius:10
-              
+        borderRadius:10         
     },
     buttonText2:{
         textTransform:'uppercase',
         color:'#fff',
         fontSize:16,
         fontWeight:'bold',
-
     }, 
     buttonContainer3:{
         height:40,
@@ -77,12 +73,11 @@ const styles = StyleSheet.create({
         alignItems:'center',
         borderRadius:50,
         borderWidth:4,
-        borderColor:'blue'
-              
+        borderColor:'green'         
     },
     buttonText3:{
         textTransform:'uppercase',
-        color:'blue',
+        color:'green',
         fontSize:16,
         fontWeight:'bold',
 
@@ -90,21 +85,19 @@ const styles = StyleSheet.create({
     buttonContainer4:{
         height:120,
         width:120,
-        marginHorizontal:50,
-        marginVertical:20,
+        marginHorizontal:100,
+        marginVertical:30,
         justifyContent:'center',
         alignItems:'center',
         borderRadius:60,
         borderWidth:4,
-        borderColor:'blue'
-              
+        borderColor:'purple'         
     },
     buttonText4:{
         textTransform:'uppercase',
-        color:'blue',
+        color:'purple',
         fontSize:16,
         fontWeight:'bold',
-
     }  
         
 });
