@@ -10,15 +10,17 @@ import GridView from "./src/Screens/GridView";
 import Welcome from "./src/Screens/Welcome";
 import Signup from "./src/Screens/Signup";
 import Hooks from "./src/Screens/Hooks";
-
+import ShowImages from "./src/Screens/ShowImages";
+import Home from "./src/Screens/Home";
 
 const Stack = createNativeStackNavigator();
 const navigator = () => {
   return(
   <NavigationContainer>
     <Stack.Navigator>
-    <Stack.Screen name ='hooks' component={Hooks} />
-    <Stack.Screen name ='Home' component={GridView} />
+    <Stack.Screen name ='Home' component={Home} options = {{title:'Gallery'}}/>
+    <Stack.Screen name ='Image' component={ShowImages} options = {{headerShown: false}} />
+    <Stack.Screen name ='grid' component={GridView} />
     <Stack.Screen name ="List Screen" component={ListScreen} />
     <Stack.Screen name= 'Detail' component={DetailScreen} /> 
     </Stack.Navigator>
